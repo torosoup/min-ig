@@ -1,11 +1,11 @@
-Profile:     MalPatient
-Id:          mal-patient
+Profile:     MinIGPatient
+Id:          minig-patient
 Parent:      NoBasisPatient
 Title:       "Pasient"
-Description: "Informasjon om pasienten, basert på no-basis."
+Description: "En pasientprofil basert på NoBasisPatient fra HL7"
 * ^status = #draft
-* ^date = "2025-01-22"
-* ^publisher = "HL7 Norge"
+* ^date = "2026-11-09"
+* ^publisher = "Thor Oscar Akre"
 
 * identifier MS
 * name.family MS
@@ -13,7 +13,7 @@ Description: "Informasjon om pasienten, basert på no-basis."
 // Eksempel på norsk pasient med fødselsnummer og adresse
 
 Instance: Pasient-1
-InstanceOf: MalPatient
+InstanceOf: MinIGPatient
 Description: "Eksempel på norsk pasient med fødselsnummer, navn og kontaktinformasjon"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><strong>Kari Elisabeth Hansen</strong></p><p>Fødselsnummer: 13031353453</p><p>Kjønn: Kvinne</p><p>Fødselsdato: 13. mars 1990</p><p>Telefon: +47 12 34 56 78 (mobil)</p><p>E-post: kari.hansen@example.no</p><p>Adresse: Storgata 123, 5020 Bergen, Norge</p></div>"
