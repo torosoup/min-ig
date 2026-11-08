@@ -1,4 +1,4 @@
-# Artifacts Summary - Mal v0.1.0
+# Artifacts Summary - Min Implementasjonsguide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -13,8 +13,8 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
-| [Blodprøve](StructureDefinition-mal-observation-blodprove.md) | Profil for vanlige blodprøver |
-| [Pasient](StructureDefinition-mal-patient.md) | Informasjon om pasienten, basert på no-basis. |
+| [Blodprøve](StructureDefinition-minig-observation-blodprove.md) | Profil for registrering av blodprøveresultater. |
+| [Pasient](StructureDefinition-minig-patient.md) | En pasientprofil basert på NoBasisPatient fra HL7 |
 
 ### Example: Example Instances 
 

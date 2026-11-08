@@ -1,21 +1,21 @@
 [{
-  "id" : "hl7.fhir.no.mal",
+  "id" : "thoroak.fhir.no.ig",
   "type" : "ImplementationGuide",
-  "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
+  "url" : "https://thoroak.github.io/min-ig/ImplementationGuide/thoroak.fhir.no.ig",
   "version" : "0.1.0",
-  "name" : "Mal"
+  "name" : "MinIG"
 },
 {
-  "id" : "mal-observation-blodprove",
+  "id" : "minig-observation-blodprove",
   "type" : "StructureDefinition",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/mal-observation-blodprove",
+  "url" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodprove",
   "version" : "0.1.0",
-  "name" : "MalObservationBlood"
+  "name" : "MinIGObservationBlood"
 },
 {
-  "id" : "mal-patient",
+  "id" : "minig-patient",
   "type" : "StructureDefinition",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/mal-patient",
+  "url" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-patient",
   "version" : "0.1.0",
-  "name" : "MalPatient"
+  "name" : "MinIGPatient"
 }]

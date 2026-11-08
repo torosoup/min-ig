@@ -1,4 +1,4 @@
-# Pasient-1 - Mal v0.1.0
+# Pasient-1 - Min Implementasjonsguide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -29,7 +29,7 @@ Adresse: Storgata 123, 5020 Bergen, Norge
   "resourceType" : "Patient",
   "id" : "Pasient-1",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/mal-patient"]
+    "profile" : ["https://thoroak.github.io/min-ig/StructureDefinition/minig-patient"]
   },
   "identifier" : [{
     "system" : "urn:oid:2.16.578.1.12.4.1.4.1",

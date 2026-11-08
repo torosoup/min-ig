@@ -1,4 +1,4 @@
-# hl7.fhir.no.mal#0.1.0: Mal
+# thoroak.fhir.no.ig#0.1.0: Min Implementasjonsguide
 
 ## Pages
 
@@ -9,12 +9,12 @@
 
 ### Resource Profiles
 
-* [Blodprøve](StructureDefinition-mal-observation-blodprove.md)
-* [Pasient](StructureDefinition-mal-patient.md)
+* [Blodprøve](StructureDefinition-minig-observation-blodprove.md)
+* [Pasient](StructureDefinition-minig-patient.md)
 
 ### ImplementationGuides
 
-* [Mal](index.md)
+* [Min Implementasjonsguide](index.md)
 
 ### Examples
 
