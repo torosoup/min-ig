@@ -8,7 +8,7 @@ Description: "Minimal server capability statement for home blood pressure exchan
 * title = "MinIG Home Blood Pressure Capability Statement"
 * status = #draft
 * date = "2026-11-09"
-* kind = #capability
+* kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #json
 * rest[0].mode = #server
