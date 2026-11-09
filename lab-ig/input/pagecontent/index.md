@@ -1,35 +1,51 @@
-### Tittel
+### Blodtrykk hjemme
 
-Introduksjonstekst (husk at dette er en mal, og ALL tekst må endres - dette er kun et eksempel)
+Dette er en øvingsguide laget under Norwegian FHIR Hackathon 2026 (FHIR-101). Den beskriver hvordan blodtrykksmålinger tatt av pasienten hjemme kan uttrykkes i HL7 FHIR og sendes til helsepersonell for vurdering. Guiden er et utkast og beskriver ingen ferdig integrasjon. Alle personer og data i eksemplene er oppdiktet.
 
 ### Mål
 
-Målet med denne implementasjonsguiden er å gi en standardisert måte å representere og utveksle helsedata på ved hjelp av HL7 FHIR. Guiden beskriver hvordan ulike FHIR-profiler og ressurser kan brukes for å oppnå interoperabilitet mellom helsesystemer.
+Målet med guiden er å vise en enkel og standardisert måte å representere hjemmemålt blodtrykk på, slik at målingene kan utveksles mellom pasientens målerapp, legekontoret og journalsystemet. Guiden skal også vise hvordan man skiller mellom målinger pasienten har sendt inn og målinger helsepersonell har vurdert.
 
 ### Omfang
 
-Denne implementasjonsguiden dekker følgende områder:
+Guiden dekker:
 
-- Pasientadministrasjon
-- Kliniske observasjoner
-- Medisinsk historikk
-- Behandlingsplaner
-- Laboratorieresultater
+- Beskrivelse av use case, aktører, krav og prosess
+- En FHIR-modell for pasient, måleenhet og blodtrykksmåling
+- Eksempler på oppdiktede pasienter og målinger
 
-### Brukstilfeller
+Guiden dekker ikke:
 
-#### Pasientregistrering
+- Tolkning av målingene eller behandling
+- Alarmer og automatisk oppfølging
+- Integrasjon mot konkrete journalsystemer
 
-Denne guiden beskriver hvordan pasienter kan registreres i et helsesystem ved hjelp av FHIR `Patient`-ressursen. Eksempler inkluderer opprettelse, oppdatering og sletting av pasientdata.
+### Brukstilfelle
 
-#### Kliniske observasjoner
+#### Hjemmemåling av blodtrykk
 
-Guiden viser hvordan kliniske observasjoner som blodtrykk, puls og temperatur kan representeres ved hjelp av FHIR `Observation`-ressursen.
+Karin Testdal (78 år) måler blodtrykket hjemme med en målerapp koblet til et blodtrykksapparat. Målingene sendes til legekontoret. Sykepleier Sara Testesen går gjennom målingene og avgjør om Karin trenger oppfølging.
+
+Målingene fra Karin regnes som innsendt av pasienten til Sara har vurdert dem. Først da er de en del av pasientens journal.
+
+#### Aktører
+
+| Aktør | Rolle |
+|---|---|
+| Pasient | Måler blodtrykket og sender inn målingene |
+| Sykepleier | Vurderer målingene og bestemmer oppfølging |
+| Journalsystemet | Tar imot og lagrer målingene |
+
+### Modell
+
+| Begrep | FHIR-ressurs |
+|---|---|
+| Pasienten | `Patient` |
+| Blodtrykksapparatet | `Device` |
+| Blodtrykksmålingen | `Observation` med systolisk og diastolisk trykk som komponenter |
 
 ### Figur
 
-Eksempel på en figur laget med PlantUML.
+Flyten fra måling til vurdering.
 
-<img src="test.svg" width="40%" />
-
-
+<img src="../images/blodtrykk-flyt.svg" width="60%" />
