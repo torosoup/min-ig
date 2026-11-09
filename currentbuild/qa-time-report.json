@@ -1,151 +1,399 @@
 {
-  "date" : "Mon, 09 Nov, 2026 14:35:31 +0000",
+  "date" : "Mon, 09 Nov, 2026 17:29:08 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-thoroak.fhir.no.ig.json",
-    "size" : 2352,
+    "size" : 4999,
     "processes" : [{
       "activity" : "load",
-      "start" : 42,
-      "length" : 7
+      "start" : 46,
+      "length" : 6
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 42,
+      "start" : 46,
       "length" : 5
     },
     {
       "activity" : "generateNarratives",
-      "start" : 42,
-      "length" : 40
+      "start" : 46,
+      "length" : 42
     },
     {
       "activity" : "validate",
-      "start" : 44,
-      "length" : 6361
+      "start" : 48,
+      "length" : 4092
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 52,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 50,
-      "length" : 26
+      "start" : 52,
+      "length" : 29
     },
     {
       "activity" : "generate2",
-      "start" : 52,
-      "length" : 25
+      "start" : 54,
+      "length" : 28
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 57,
-      "length" : 1
+      "start" : 60,
+      "length" : 2
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 59,
-      "length" : 1
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Patient-Pasient-1.json",
-    "size" : 1159,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 42,
+      "start" : 63,
       "length" : 3
-    },
-    {
-      "activity" : "load-configure",
-      "start" : 42,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 50,
-      "length" : 7
-    },
-    {
-      "activity" : "generate1",
-      "start" : 50,
-      "length" : 6
-    },
-    {
-      "activity" : "generate2",
-      "start" : 52,
-      "length" : 8
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 57,
-      "length" : 1
     }]
   },
   {
-    "name" : "fsh-generated/resources/StructureDefinition-minig-observation-blodprove.json",
-    "size" : 2289,
+    "name" : "fsh-generated/resources/CapabilityStatement-MinIGCapabilityStatement.json",
+    "size" : 1207,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 42,
+      "start" : 46,
       "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 42,
-      "length" : 7
+      "start" : 46,
+      "length" : 3
     },
     {
-      "activity" : "generateSnapshots",
-      "start" : 42,
-      "length" : 34
+      "activity" : "load-configure",
+      "start" : 46,
+      "length" : 2
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 42,
+      "start" : 46,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 42,
-      "length" : 62
+      "start" : 46,
+      "length" : 8
     },
     {
       "activity" : "validate",
-      "start" : 43,
-      "length" : 746
+      "start" : 48,
+      "length" : 42
     },
     {
-      "activity" : "scanForUsageStats",
-      "start" : 50,
+      "activity" : "generate1",
+      "start" : 52,
+      "length" : 5
+    },
+    {
+      "activity" : "generate2",
+      "start" : 54,
+      "length" : 24
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 57,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Device-karin-blodtrykksapparat.json",
+    "size" : 345,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 46,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 46,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 52,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 54,
+      "length" : 8
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 60,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-blodtrykk-innsendt.json",
+    "size" : 1648,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 46,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 46,
+      "length" : 105
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 585
+    },
+    {
+      "activity" : "generate1",
+      "start" : 52,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 54,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-blodtrykk-vurdert.json",
+    "size" : 1646,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 46,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 46,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 12
+    },
+    {
+      "activity" : "generate1",
+      "start" : 52,
+      "length" : 2
+    },
+    {
+      "activity" : "generate2",
+      "start" : 54,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-karin-testdal.json",
+    "size" : 502,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 46,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
       "length" : 2
     },
     {
       "activity" : "generate1",
-      "start" : 50,
-      "length" : 47
-    },
-    {
-      "activity" : "generate2",
       "start" : 52,
-      "length" : 492
+      "length" : 2
     },
     {
       "activity" : "generate2",
-      "start" : 53,
-      "length" : 429
+      "start" : 54,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Practitioner-sara-testesen.json",
+    "size" : 177,
+    "processes" : [{
+      "activity" : "generateNarratives",
+      "start" : 46,
+      "length" : 1
     },
     {
-      "activity" : "makeDependencies",
-      "start" : 54,
+      "activity" : "validate",
+      "start" : 52,
       "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 52,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 54,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Provenance-blodtrykk-vurdering.json",
+    "size" : 294,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 46,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 46,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 52,
+      "length" : 2
+    },
+    {
+      "activity" : "generate2",
+      "start" : 54,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-minig-device-blodtrykksapparat.json",
+    "size" : 874,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 46,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 46,
+      "length" : 27
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 46,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 46,
+      "length" : 45
+    },
+    {
+      "activity" : "validate",
+      "start" : 46,
+      "length" : 646
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 52,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 52,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 52,
+      "length" : 25
+    },
+    {
+      "activity" : "generate2",
+      "start" : 54,
+      "length" : 452
+    },
+    {
+      "activity" : "generate2",
+      "start" : 56,
+      "length" : 382
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 57,
-      "length" : 6
+      "start" : 60,
+      "length" : 4
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 59,
+      "start" : 63,
       "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-minig-observation-blodtrykk.json",
+    "size" : 2590,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 46,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 46,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 46,
+      "length" : 48
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 46,
+      "length" : 32
+    },
+    {
+      "activity" : "validate",
+      "start" : 47,
+      "length" : 369
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 52,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 53,
+      "length" : 50
+    },
+    {
+      "activity" : "generate2",
+      "start" : 55,
+      "length" : 706
+    },
+    {
+      "activity" : "generate2",
+      "start" : 56,
+      "length" : 362
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 60,
+      "length" : 9
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 63,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 63,
+      "length" : 4
     }]
   },
   {
@@ -153,95 +401,101 @@
     "size" : 832,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 42,
+      "start" : 46,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 42,
-      "length" : 3
+      "start" : 46,
+      "length" : 2
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 42,
-      "length" : 37
-    },
-    {
-      "activity" : "load-configure",
-      "start" : 42,
-      "length" : 1
+      "start" : 46,
+      "length" : 34
     },
     {
       "activity" : "generateNarratives",
-      "start" : 43,
-      "length" : 28
+      "start" : 46,
+      "length" : 21
     },
     {
       "activity" : "validate",
-      "start" : 43,
-      "length" : 507
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 50,
-      "length" : 1
+      "start" : 47,
+      "length" : 353
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 50,
+      "start" : 52,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 50,
-      "length" : 49
-    },
-    {
-      "activity" : "generate2",
-      "start" : 52,
-      "length" : 470
-    },
-    {
-      "activity" : "generate2",
       "start" : 53,
-      "length" : 205
+      "length" : 51
+    },
+    {
+      "activity" : "generate2",
+      "start" : 55,
+      "length" : 328
+    },
+    {
+      "activity" : "generate2",
+      "start" : 56,
+      "length" : 198
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 57,
-      "length" : 10
-    },
-    {
-      "activity" : "scanProfilesForR5",
-      "start" : 59,
-      "length" : 1
+      "start" : 60,
+      "length" : 6
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 59,
-      "length" : 2
+      "start" : 63,
+      "length" : 1
     }]
   },
   {
     "name" : "/fsh-generated/includes/fsh-link-references.md",
-    "size" : 168
+    "size" : 631
   },
   {
     "name" : "/fsh-generated/includes/menu.xml",
-    "size" : 1089
+    "size" : 1556
   },
   {
-    "name" : "/input/pagecontent/index.md",
-    "size" : 1940,
+    "name" : "/input/pagecontent/aktorer.md",
+    "size" : 368,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 53,
-      "length" : 1
+      "start" : 56,
+      "length" : 2
     }]
   },
   {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 1940
+  },
+  {
+    "name" : "/input/pagecontent/krav.md",
+    "size" : 1192
+  },
+  {
+    "name" : "/input/pagecontent/prosess.md",
+    "size" : 482
+  },
+  {
+    "name" : "/input/pagecontent/informasjonsbehov.md",
+    "size" : 628
+  },
+  {
     "name" : "/template/config",
-    "size" : 0
+    "size" : 0,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 56,
+      "length" : 1
+    }]
   },
   {
     "name" : "/template/config/_config.yml",
@@ -249,12 +503,7 @@
   },
   {
     "name" : "/input/images",
-    "size" : 0,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 53,
-      "length" : 1
-    }]
+    "size" : 0
   },
   {
     "name" : "/input/images/test.puml",
@@ -270,6 +519,6 @@
   },
   {
     "name" : "/temp/pages/_includes/artifacts.xml",
-    "size" : 2535
+    "size" : 5832
   }]
 }

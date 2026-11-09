@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "MinIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Min Implementasjonsguide"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-09T14:35:31+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-09T17:29:08+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Thor Oscar Akre"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -393,17 +393,127 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://thoroak.github.io/min-ig/Observation/blodtrykk-innsendt> ;
+         fhir:Reference.reference [ fhir:value "Observation/blodtrykk-innsendt" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "blodtrykk-innsendt" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fiktiv hjemmemåling sendt inn av Karin, ikke vurdert" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk" ;
+         fhir:link <https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk>
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://thoroak.github.io/min-ig/Provenance/blodtrykk-vurdering> ;
+         fhir:Reference.reference [ fhir:value "Provenance/blodtrykk-vurdering" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "blodtrykk-vurdering" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fiktiv sporbarhet for Saras vurdering av blodtrykksmålingen" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://thoroak.github.io/min-ig/Observation/blodtrykk-vurdert> ;
+         fhir:Reference.reference [ fhir:value "Observation/blodtrykk-vurdert" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "blodtrykk-vurdert" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fiktiv hjemmemåling vurdert av sykepleier Sara Testesen" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk" ;
+         fhir:link <https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk>
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodprove> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/minig-observation-blodprove" ]
+         fhir:link <https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/minig-observation-blodtrykk" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Blodprøve" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil for registrering av blodprøveresultater." ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Blood pressure observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for paired systolic and diastolic home blood pressure measurements." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1 ;
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://thoroak.github.io/min-ig/StructureDefinition/minig-device-blodtrykksapparat> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/minig-device-blodtrykksapparat" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Home blood pressure monitor" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for a connected home blood pressure monitor." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://thoroak.github.io/min-ig/Device/karin-blodtrykksapparat> ;
+         fhir:Reference.reference [ fhir:value "Device/karin-blodtrykksapparat" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "karin-blodtrykksapparat" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fiktivt tilkoblet blodtrykksapparat brukt av Karin Testdal" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://thoroak.github.io/min-ig/StructureDefinition/minig-device-blodtrykksapparat" ;
+         fhir:link <https://thoroak.github.io/min-ig/StructureDefinition/minig-device-blodtrykksapparat>
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://thoroak.github.io/min-ig/Patient/karin-testdal> ;
+         fhir:Reference.reference [ fhir:value "Patient/karin-testdal" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "karin-testdal" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fiktiv pasient Karin Testdal, 78 år" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://thoroak.github.io/min-ig/StructureDefinition/minig-patient" ;
+         fhir:link <https://thoroak.github.io/min-ig/StructureDefinition/minig-patient>
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://thoroak.github.io/min-ig/CapabilityStatement/MinIGCapabilityStatement> ;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/MinIGCapabilityStatement" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MinIG Home Blood Pressure Capability Statement" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimal server capability statement for home blood pressure exchange." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -417,22 +527,19 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "En pasientprofil basert på NoBasisPatient fra HL7" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2 ;
+       fhir:index 9 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "Patient" ]
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://thoroak.github.io/min-ig/Patient/Pasient-1> ;
-         fhir:Reference.reference [ fhir:value "Patient/Pasient-1" ]
+         fhir:link <https://thoroak.github.io/min-ig/Practitioner/sara-testesen> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/sara-testesen" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pasient-1" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eksempel på norsk pasient med fødselsnummer, navn og kontaktinformasjon" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://thoroak.github.io/min-ig/StructureDefinition/minig-patient" ;
-         fhir:link <https://thoroak.github.io/min-ig/StructureDefinition/minig-patient>
-       ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "sara-testesen" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fiktiv sykepleier som vurderer Karins målinger" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ] ;
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [
@@ -452,6 +559,46 @@
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "aktorer.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "aktorer.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Aktorer" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "informasjonsbehov.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "informasjonsbehov.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Informasjonsbehov" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "krav.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "krav.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Krav" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "prosess.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "prosess.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Prosess" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ] ;

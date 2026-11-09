@@ -6,15 +6,15 @@
   "status" : "draft",
   "package-id" : "thoroak.fhir.no.ig",
   "ig-ver" : "0.1.0",
-  "date" : "Mon, 09 Nov, 2026 14:35:31 +0000",
-  "dateISO8601" : "2026-11-09T14:35:31+00:00",
-  "errs" : 1,
-  "warnings" : 17,
-  "hints" : 7,
-  "broken-links" : 1,
+  "date" : "Mon, 09 Nov, 2026 17:29:08 +0000",
+  "dateISO8601" : "2026-11-09T17:29:08+00:00",
+  "errs" : 7,
+  "warnings" : 16,
+  "hints" : 17,
+  "broken-links" : 2,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 615512584
+  "maxMemory" : 900732544
 }

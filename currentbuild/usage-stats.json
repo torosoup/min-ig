@@ -5,10 +5,16 @@
   "jurisdiction": "NO",
   "extensions": [],
   "profiles": {
+    "Device": [
+      {
+        "url": "https://thoroak.github.io/min-ig/StructureDefinition/minig-device-blodtrykksapparat",
+        "title": "Home blood pressure monitor"
+      }
+    ],
     "Observation": [
       {
-        "url": "https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodprove",
-        "title": "Blodprøve"
+        "url": "https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk",
+        "title": "Blood pressure observation"
       }
     ],
     "Patient": [
@@ -61,9 +67,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
       "ImplementationGuide.dependsOn"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

@@ -11,7 +11,7 @@
   <name value="MinIG"/>
   <title value="Min Implementasjonsguide"/>
   <status value="draft"/>
-  <date value="2026-11-09T14:35:31+00:00"/>
+  <date value="2026-11-09T17:29:08+00:00"/>
   <publisher value="Thor Oscar Akre"/>
   <contact>
     <name value="Thor Oscar Akre"/>
@@ -258,13 +258,90 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/blodtrykk-innsendt"/>
+      </reference>
+      <name value="blodtrykk-innsendt"/>
+      <description value="Fiktiv hjemmemåling sendt inn av Karin, ikke vurdert"/>
+      <exampleCanonical value="https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/blodtrykk-vurdering"/>
+      </reference>
+      <name value="blodtrykk-vurdering"/>
+      <description value="Fiktiv sporbarhet for Saras vurdering av blodtrykksmålingen"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/blodtrykk-vurdert"/>
+      </reference>
+      <name value="blodtrykk-vurdert"/>
+      <description value="Fiktiv hjemmemåling vurdert av sykepleier Sara Testesen"/>
+      <exampleCanonical value="https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/minig-observation-blodprove"/>
+        <reference value="StructureDefinition/minig-observation-blodtrykk"/>
       </reference>
-      <name value="Blodprøve"/>
-      <description value="Profil for registrering av blodprøveresultater."/>
+      <name value="Blood pressure observation"/>
+      <description value="Profile for paired systolic and diastolic home blood pressure measurements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/minig-device-blodtrykksapparat"/>
+      </reference>
+      <name value="Home blood pressure monitor"/>
+      <description value="Profile for a connected home blood pressure monitor."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/karin-blodtrykksapparat"/>
+      </reference>
+      <name value="karin-blodtrykksapparat"/>
+      <description value="Fiktivt tilkoblet blodtrykksapparat brukt av Karin Testdal"/>
+      <exampleCanonical value="https://thoroak.github.io/min-ig/StructureDefinition/minig-device-blodtrykksapparat"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/karin-testdal"/>
+      </reference>
+      <name value="karin-testdal"/>
+      <description value="Fiktiv pasient Karin Testdal, 78 år"/>
+      <exampleCanonical value="https://thoroak.github.io/min-ig/StructureDefinition/minig-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/MinIGCapabilityStatement"/>
+      </reference>
+      <name value="MinIG Home Blood Pressure Capability Statement"/>
+      <description value="Minimal server capability statement for home blood pressure exchange."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -280,14 +357,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="Practitioner"/>
       </extension>
       <reference>
-        <reference value="Patient/Pasient-1"/>
+        <reference value="Practitioner/sara-testesen"/>
       </reference>
-      <name value="Pasient-1"/>
-      <description value="Eksempel på norsk pasient med fødselsnummer, navn og kontaktinformasjon"/>
-      <exampleCanonical value="https://thoroak.github.io/min-ig/StructureDefinition/minig-patient"/>
+      <name value="sara-testesen"/>
+      <description value="Fiktiv sykepleier som vurderer Karins målinger"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -302,6 +379,38 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="aktorer.html"/>
+        </extension>
+        <nameUrl value="aktorer.html"/>
+        <title value="Aktorer"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="informasjonsbehov.html"/>
+        </extension>
+        <nameUrl value="informasjonsbehov.html"/>
+        <title value="Informasjonsbehov"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="krav.html"/>
+        </extension>
+        <nameUrl value="krav.html"/>
+        <title value="Krav"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="prosess.html"/>
+        </extension>
+        <nameUrl value="prosess.html"/>
+        <title value="Prosess"/>
         <generation value="markdown"/>
       </page>
     </page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="blodtrykk-vurdering"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance blodtrykk-vurdering</b></p><a name="blodtrykk-vurdering"> </a><a name="hcblodtrykk-vurdering"> </a><p>Provenance for <a href="Observation-blodtrykk-vurdert.html">Observation Blood pressure panel with all children optional</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2026-11-09 09:10:00+0100</td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>who</b></td></tr><tr><td><a href="Practitioner-sara-testesen.html">Sara Testesen</a></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="Observation/blodtrykk-vurdert"/>
+  </target>
+  <recorded value="2026-11-09T09:10:00+01:00"/>
+  <agent>
+    <who>
+      <reference value="Practitioner/sara-testesen"/>
+    </who>
+  </agent>
+</Provenance>

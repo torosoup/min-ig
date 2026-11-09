@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://thoroak.github.io/min-ig/Patient/karin-testdal> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "karin-testdal"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://thoroak.github.io/min-ig/StructureDefinition/minig-patient" ;
+       fhir:index 0 ;
+       fhir:link <https://thoroak.github.io/min-ig/StructureDefinition/minig-patient>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Karin Testdal</p></div>"
+  ] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.family [ fhir:value "Testdal" ] ;
+     fhir:HumanName.given [
+       fhir:value "Karin" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "1948-06-14"^^xsd:date] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.country [ fhir:value "NO" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://thoroak.github.io/min-ig/Patient/karin-testdal.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

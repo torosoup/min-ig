@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="karin-testdal"/>
+  <meta>
+    <profile value="https://thoroak.github.io/min-ig/StructureDefinition/minig-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Karin Testdal</p></div>
+  </text>
+  <name>
+    <family value="Testdal"/>
+    <given value="Karin"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1948-06-14"/>
+  <address>
+    <country value="NO"/>
+  </address>
+</Patient>

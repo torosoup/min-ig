@@ -25,7 +25,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -39,7 +39,63 @@
     "sources" : ["2.16.840.1.113883.4.642.3.5"],
     "uses" : {
     },
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceNameType",
+    "title" : "DeviceNameType",
+    "description" : "The type of name the device is referred by.",
+    "systems" : ["http://hl7.org/fhir/device-nametype"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1083"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1083"],
+    "uses" : {
+    },
+    "StructureDefinition-minig-device-blodtrykksapparat.html" : "Home blood pressure monitor"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatus",
+    "title" : "FHIRDeviceStatus",
+    "description" : "The availability status of the device.",
+    "systems" : ["http://hl7.org/fhir/device-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.209"],
+    "sources" : ["2.16.840.1.113883.4.642.3.209"],
+    "uses" : {
+    },
+    "StructureDefinition-minig-device-blodtrykksapparat.html" : "Home blood pressure monitor"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-status-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatusReason",
+    "title" : "FHIRDeviceStatusReason",
+    "description" : "The availability status reason of the device.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/device-status-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1081"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1081"],
+    "uses" : {
+    },
+    "StructureDefinition-minig-device-blodtrykksapparat.html" : "Home blood pressure monitor"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceType",
+    "title" : "Device Type",
+    "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1376"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1376"],
+    "uses" : {
+    },
+    "StructureDefinition-minig-device-blodtrykksapparat.html" : "Home blood pressure monitor"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -81,8 +137,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation",
     "StructureDefinition-minig-patient.html" : "Pasient",
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-minig-device-blodtrykksapparat.html" : "Home blood pressure monitor"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -139,21 +196,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.403"],
     "uses" : {
     },
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "LOINCCodes",
-    "title" : "LOINC Codes",
-    "description" : "This value set includes all LOINC codes",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113883.4.642.3.396"],
-    "sources" : ["2.16.840.1.113883.4.642.3.396"],
-    "uses" : {
-    },
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -167,7 +210,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -181,7 +224,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.395"],
     "uses" : {
     },
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -195,7 +238,21 @@
     "sources" : ["2.16.840.1.113883.4.642.3.400"],
     "uses" : {
     },
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "VitalSigns",
+    "title" : "Vital Signs",
+    "description" : "This value set indicates the allowed vital sign result types.   The LOINC code for Vitals Signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4).",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.62"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
+    "uses" : {
+    },
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -212,6 +269,20 @@
     "StructureDefinition-minig-patient.html" : "Pasient"
   },
   {
+    "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+    "oids" : ["2.16.840.1.113883.4.642.3.59"],
+    "sources" : ["2.16.840.1.113883.4.642.3.59"],
+    "uses" : {
+    },
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
     "version" : "4.0.1",
     "status" : "draft",
@@ -224,7 +295,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.407"],
     "uses" : {
     },
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -238,6 +309,34 @@
     "sources" : ["2.16.840.1.113883.4.642.3.397"],
     "uses" : {
     },
-    "StructureDefinition-minig-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "VitalSignsUnits",
+    "title" : "Vital Signs Units",
+    "description" : "Common UCUM units for recording Vital Signs",
+    "systems" : ["http://unitsofmeasure.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.955"],
+    "sources" : ["2.16.840.1.113883.4.642.3.955"],
+    "uses" : {
+    },
+    "StructureDefinition-minig-observation-blodtrykk.html" : "Blood pressure observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/udi-entry-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "UDIEntryType",
+    "title" : "UDIEntryType",
+    "description" : "Codes to identify how UDI data was entered.",
+    "systems" : ["http://hl7.org/fhir/udi-entry-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.211"],
+    "sources" : ["2.16.840.1.113883.4.642.3.211"],
+    "uses" : {
+    },
+    "StructureDefinition-minig-device-blodtrykksapparat.html" : "Home blood pressure monitor"
   }]
 }

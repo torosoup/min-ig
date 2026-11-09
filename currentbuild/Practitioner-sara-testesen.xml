@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="sara-testesen"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner sara-testesen</b></p><a name="sara-testesen"> </a><a name="hcsara-testesen"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Sara Testesen</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr></table></div>
+  </text>
+  <active value="true"/>
+  <name>
+    <family value="Testesen"/>
+    <given value="Sara"/>
+  </name>
+</Practitioner>

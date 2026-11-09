@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -103,6 +103,25 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Bruk av guiden
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="aktorer.html">Aktører</a>
+      </li>
+      <li>
+        <a href="krav.html">Krav</a>
+      </li>
+      <li>
+        <a href="prosess.html">Prosess</a>
+      </li>
+      <li>
+        <a href="informasjonsbehov.html">Informasjonsbehov</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
@@ -153,10 +172,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Example: Example Instances</a>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -165,6 +187,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-MinIGCapabilityStatement.html"
+                  title="CapabilityStatement/MinIGCapabilityStatement">MinIG Home Blood Pressure Capability Statement</a>
+            </td>
+            <td>
+<p>Minimal server capability statement for home blood pressure exchange.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -172,11 +211,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-minig-observation-blodprove.html"
-                  title="StructureDefinition/minig-observation-blodprove">Blodprøve</a>
+               <a href="StructureDefinition-minig-observation-blodtrykk.html"
+                  title="StructureDefinition/minig-observation-blodtrykk">Blood pressure observation</a>
             </td>
             <td>
-<p>Profil for registrering av blodprøveresultater.</p>
+<p>Profile for paired systolic and diastolic home blood pressure measurements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-minig-device-blodtrykksapparat.html"
+                  title="StructureDefinition/minig-device-blodtrykksapparat">Home blood pressure monitor</a>
+            </td>
+            <td>
+<p>Profile for a connected home blood pressure monitor.</p>
 </td>
          </tr>
          <tr>
@@ -190,7 +238,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -198,10 +246,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-Pasient-1.html" title="Patient/Pasient-1">Pasient-1</a>
+               <a href="Observation-blodtrykk-innsendt.html"
+                  title="Observation/blodtrykk-innsendt">blodtrykk-innsendt</a>
             </td>
             <td>
-<p>Eksempel på norsk pasient med fødselsnummer, navn og kontaktinformasjon</p>
+<p>Fiktiv hjemmemåling sendt inn av Karin, ikke vurdert</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-blodtrykk-vurdering.html"
+                  title="Provenance/blodtrykk-vurdering">blodtrykk-vurdering</a>
+            </td>
+            <td>
+<p>Fiktiv sporbarhet for Saras vurdering av blodtrykksmålingen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-blodtrykk-vurdert.html"
+                  title="Observation/blodtrykk-vurdert">blodtrykk-vurdert</a>
+            </td>
+            <td>
+<p>Fiktiv hjemmemåling vurdert av sykepleier Sara Testesen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-karin-blodtrykksapparat.html"
+                  title="Device/karin-blodtrykksapparat">karin-blodtrykksapparat</a>
+            </td>
+            <td>
+<p>Fiktivt tilkoblet blodtrykksapparat brukt av Karin Testdal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-karin-testdal.html" title="Patient/karin-testdal">karin-testdal</a>
+            </td>
+            <td>
+<p>Fiktiv pasient Karin Testdal, 78 år</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-sara-testesen.html"
+                  title="Practitioner/sara-testesen">sara-testesen</a>
+            </td>
+            <td>
+<p>Fiktiv sykepleier som vurderer Karins målinger</p>
 </td>
          </tr>
       </tbody>
@@ -224,7 +317,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/thoroak">Thor Oscar Akre</a>.  Package thoroak.fhir.no.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 14:35+0000">2026-11-09</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/thoroak">Thor Oscar Akre</a>.  Package thoroak.fhir.no.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 17:29+0000">2026-11-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

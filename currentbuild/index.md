@@ -75,7 +75,7 @@ Flyten fra måling til vurdering.
   "name" : "MinIG",
   "title" : "Min Implementasjonsguide",
   "status" : "draft",
-  "date" : "2026-11-09T14:35:31+00:00",
+  "date" : "2026-11-09T17:29:08+00:00",
   "publisher" : "Thor Oscar Akre",
   "contact" : [{
     "name" : "Thor Oscar Akre",
@@ -404,17 +404,129 @@ Flyten fra måling til vurdering.
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-blodtrykk-innsendt.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/blodtrykk-innsendt"
+      },
+      "name" : "blodtrykk-innsendt",
+      "description" : "Fiktiv hjemmemåling sendt inn av Karin, ikke vurdert",
+      "exampleCanonical" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Provenance-blodtrykk-vurdering.html"
+      }],
+      "reference" : {
+        "reference" : "Provenance/blodtrykk-vurdering"
+      },
+      "name" : "blodtrykk-vurdering",
+      "description" : "Fiktiv sporbarhet for Saras vurdering av blodtrykksmålingen",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-blodtrykk-vurdert.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/blodtrykk-vurdert"
+      },
+      "name" : "blodtrykk-vurdert",
+      "description" : "Fiktiv hjemmemåling vurdert av sykepleier Sara Testesen",
+      "exampleCanonical" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-minig-observation-blodprove.html"
+        "valueUri" : "StructureDefinition-minig-observation-blodtrykk.html"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/minig-observation-blodprove"
+        "reference" : "StructureDefinition/minig-observation-blodtrykk"
       },
-      "name" : "Blodprøve",
-      "description" : "Profil for registrering av blodprøveresultater.",
+      "name" : "Blood pressure observation",
+      "description" : "Profile for paired systolic and diastolic home blood pressure measurements.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-minig-device-blodtrykksapparat.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/minig-device-blodtrykksapparat"
+      },
+      "name" : "Home blood pressure monitor",
+      "description" : "Profile for a connected home blood pressure monitor.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Device-karin-blodtrykksapparat.html"
+      }],
+      "reference" : {
+        "reference" : "Device/karin-blodtrykksapparat"
+      },
+      "name" : "karin-blodtrykksapparat",
+      "description" : "Fiktivt tilkoblet blodtrykksapparat brukt av Karin Testdal",
+      "exampleCanonical" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-device-blodtrykksapparat"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-karin-testdal.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/karin-testdal"
+      },
+      "name" : "karin-testdal",
+      "description" : "Fiktiv pasient Karin Testdal, 78 år",
+      "exampleCanonical" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CapabilityStatement-MinIGCapabilityStatement.html"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/MinIGCapabilityStatement"
+      },
+      "name" : "MinIG Home Blood Pressure Capability Statement",
+      "description" : "Minimal server capability statement for home blood pressure exchange.",
       "exampleBoolean" : false
     },
     {
@@ -436,18 +548,18 @@ Flyten fra måling til vurdering.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
+        "valueString" : "Practitioner"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Patient-Pasient-1.html"
+        "valueUri" : "Practitioner-sara-testesen.html"
       }],
       "reference" : {
-        "reference" : "Patient/Pasient-1"
+        "reference" : "Practitioner/sara-testesen"
       },
-      "name" : "Pasient-1",
-      "description" : "Eksempel på norsk pasient med fødselsnummer, navn og kontaktinformasjon",
-      "exampleCanonical" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-patient"
+      "name" : "sara-testesen",
+      "description" : "Fiktiv sykepleier som vurderer Karins målinger",
+      "exampleBoolean" : true
     }],
     "page" : {
       "extension" : [{
@@ -464,6 +576,42 @@ Flyten fra måling til vurdering.
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "aktorer.html"
+        }],
+        "nameUrl" : "aktorer.html",
+        "title" : "Aktorer",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "informasjonsbehov.html"
+        }],
+        "nameUrl" : "informasjonsbehov.html",
+        "title" : "Informasjonsbehov",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "krav.html"
+        }],
+        "nameUrl" : "krav.html",
+        "title" : "Krav",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "prosess.html"
+        }],
+        "nameUrl" : "prosess.html",
+        "title" : "Prosess",
         "generation" : "markdown"
       }]
     },

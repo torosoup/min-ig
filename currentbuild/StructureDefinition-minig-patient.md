@@ -16,8 +16,9 @@ En pasientprofil basert på NoBasisPatient fra HL7
 
 **Usages:**
 
-* Refer to this Profile: [Blodprøve](StructureDefinition-minig-observation-blodprove.md)
-* Examples for this Profile: [Patient/Pasient-1](Patient-Pasient-1.md)
+* Refer to this Profile: [Blood pressure observation](StructureDefinition-minig-observation-blodtrykk.md)
+* Examples for this Profile: [Patient/karin-testdal](Patient-karin-testdal.md)
+* CapabilityStatements using this Profile: [MinIG Home Blood Pressure Capability Statement](CapabilityStatement-MinIGCapabilityStatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/thoroak.fhir.no.ig|current/StructureDefinition/StructureDefinition-minig-patient.json)
 

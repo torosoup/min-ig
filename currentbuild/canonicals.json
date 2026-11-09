@@ -1,4 +1,11 @@
 [{
+  "id" : "MinIGCapabilityStatement",
+  "type" : "CapabilityStatement",
+  "url" : "https://thoroak.github.io/min-ig/CapabilityStatement/minig-capability-statement",
+  "version" : "0.1.0",
+  "name" : "MinIGCapabilityStatement"
+},
+{
   "id" : "thoroak.fhir.no.ig",
   "type" : "ImplementationGuide",
   "url" : "https://thoroak.github.io/min-ig/ImplementationGuide/thoroak.fhir.no.ig",
@@ -6,11 +13,18 @@
   "name" : "MinIG"
 },
 {
-  "id" : "minig-observation-blodprove",
+  "id" : "minig-device-blodtrykksapparat",
   "type" : "StructureDefinition",
-  "url" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodprove",
+  "url" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-device-blodtrykksapparat",
   "version" : "0.1.0",
-  "name" : "MinIGObservationBlood"
+  "name" : "MinIGBloodPressureDevice"
+},
+{
+  "id" : "minig-observation-blodtrykk",
+  "type" : "StructureDefinition",
+  "url" : "https://thoroak.github.io/min-ig/StructureDefinition/minig-observation-blodtrykk",
+  "version" : "0.1.0",
+  "name" : "MinIGBloodPressureObservation"
 },
 {
   "id" : "minig-patient",

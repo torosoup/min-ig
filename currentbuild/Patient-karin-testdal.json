@@ -1,0 +1,20 @@
+{
+  "resourceType" : "Patient",
+  "id" : "karin-testdal",
+  "meta" : {
+    "profile" : ["https://thoroak.github.io/min-ig/StructureDefinition/minig-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Karin Testdal</p></div>"
+  },
+  "name" : [{
+    "family" : "Testdal",
+    "given" : ["Karin"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1948-06-14",
+  "address" : [{
+    "country" : "NO"
+  }]
+}

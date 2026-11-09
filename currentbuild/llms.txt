@@ -4,13 +4,22 @@
 
 * [Home](index.md)
 * [Artifacts Summary](artifacts.md)
+* [Krav](krav.md)
+* [Prosess](prosess.md)
+* [Aktorer](aktorer.md)
+* [Informasjonsbehov](informasjonsbehov.md)
 
 ## Resources
 
 ### Resource Profiles
 
-* [Blodprøve](StructureDefinition-minig-observation-blodprove.md)
+* [Home blood pressure monitor](StructureDefinition-minig-device-blodtrykksapparat.md)
+* [Blood pressure observation](StructureDefinition-minig-observation-blodtrykk.md)
 * [Pasient](StructureDefinition-minig-patient.md)
+
+### CapabilityStatements
+
+* [MinIG Home Blood Pressure Capability Statement](CapabilityStatement-MinIGCapabilityStatement.md)
 
 ### ImplementationGuides
 
@@ -18,4 +27,9 @@
 
 ### Examples
 
-* [Pasient-1 (Patient)](Patient-Pasient-1.md)
+* [karin-blodtrykksapparat (Device)](Device-karin-blodtrykksapparat.md)
+* [blodtrykk-innsendt (Observation)](Observation-blodtrykk-innsendt.md)
+* [blodtrykk-vurdert (Observation)](Observation-blodtrykk-vurdert.md)
+* [karin-testdal (Patient)](Patient-karin-testdal.md)
+* [sara-testesen (Practitioner)](Practitioner-sara-testesen.md)
+* [blodtrykk-vurdering (Provenance)](Provenance-blodtrykk-vurdering.md)
