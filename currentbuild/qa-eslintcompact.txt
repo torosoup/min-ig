@@ -2,6 +2,7 @@ MinIG
 =========================================
 
 Generic: line 0, col 0, Warning - The reference urn:iso:std:iso:3166 could not be resolved (INVARIANT)
+Generic: line 0, col 0, Error - The image source '../images/blodtrykk-flyt.svg' cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177 (STRUCTURE)
 Generic: line 0, col 0, Warning - The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10 (STRUCTURE)
 Generic: line 0, col 0, Warning - The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9 (STRUCTURE)
@@ -27,5 +28,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /__w/min-ig/min-ig/lab-ig/fsh-generated/resources/StructureDefinition-minig-patient.json: line 0, col 0, Error - The valueSet reference urn:iso:std:iso:3166 on element Patient.extension.extension points to something that is not a value set (CodeSystem) (BUSINESSRULE)
 /__w/min-ig/min-ig/lab-ig/fsh-generated/resources/StructureDefinition-minig-patient.json: line 0, col 0, Info - The resource StructureDefinition/minig-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html) (BUSINESSRULE)
 
-err = 1, warn = 17, info = 7, broken links = 0
+err = 1, warn = 17, info = 7, broken links = 1
 IG Publisher Version: 3.0.3

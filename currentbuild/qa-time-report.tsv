@@ -1,14 +1,15 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-thoroak.fhir.no.ig.json	2352	-	0	0	0	0	0	0	9	51	0	0	0	0	1	0	0	0	0	0	29	34	0	0	0	1	0	1
-fsh-generated/resources/Patient-Pasient-1.json	1159	4	0	0	2	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	3	11	0	0	1	0	0	0
-fsh-generated/resources/StructureDefinition-minig-observation-blodprove.json	2289	2	0	49	1	0	1	0	0	76	0	0	0	0	0	0	0	2	0	0	56	644	0	0	0	8	0	1
-fsh-generated/resources/StructureDefinition-minig-patient.json	832	1	0	53	0	0	0	0	0	37	0	0	1	0	0	0	0	2	0	0	48	643	0	0	0	9	1	2
+/fsh-generated/resources/ImplementationGuide-thoroak.fhir.no.ig.json	2352	-	0	0	0	0	0	0	5	40	0	0	0	0	0	0	0	0	0	0	26	25	0	0	0	1	0	1
+fsh-generated/resources/Patient-Pasient-1.json	1159	3	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	8	0	0	1	0	0	0
+fsh-generated/resources/StructureDefinition-minig-observation-blodprove.json	2289	2	0	34	0	0	0	0	1	62	0	0	0	0	0	0	0	2	0	0	47	492	0	1	0	6	0	1
+fsh-generated/resources/StructureDefinition-minig-patient.json	832	1	0	37	1	0	0	0	0	28	0	0	1	0	0	0	0	1	0	0	49	470	0	0	0	10	1	2
 /fsh-generated/includes/fsh-link-references.md	168	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /fsh-generated/includes/menu.xml	1089	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/index.md	1058	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/index.md	1940	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
 /template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
 /input/images/test.puml	389	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/blodtrykk-flyt.svg	10374	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/images/test.svg	8294	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/temp/pages/_includes/artifacts.xml	2535	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	2535	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0

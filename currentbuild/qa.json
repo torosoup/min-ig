@@ -6,15 +6,15 @@
   "status" : "draft",
   "package-id" : "thoroak.fhir.no.ig",
   "ig-ver" : "0.1.0",
-  "date" : "Sun, 08 Nov, 2026 23:14:52 +0000",
-  "dateISO8601" : "2026-11-08T23:14:52+00:00",
+  "date" : "Mon, 09 Nov, 2026 14:35:31 +0000",
+  "dateISO8601" : "2026-11-09T14:35:31+00:00",
   "errs" : 1,
   "warnings" : 17,
   "hints" : 7,
-  "broken-links" : 0,
+  "broken-links" : 1,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 666934656
+  "maxMemory" : 615512584
 }

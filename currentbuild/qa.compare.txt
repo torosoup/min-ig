@@ -1,10 +1,10 @@
 MinIG : Validation Results
 =========================================
 
-err = 1, warn = 17, info = 7, broken links = 0
+err = 1, warn = 17, info = 7, broken links = 1
 $--
 Generated $--. FHIR version $-- for thoroak.fhir.no.ig#$-- (canonical = https://thoroak.github.io/min-ig)
- Build Errors : 0 / 13 / 0
+ Build Errors : 1 / 13 / 0
  /__w/min-ig/min-ig/lab-ig/fsh-generated/resources/ImplementationGuide-thoroak.fhir.no.ig : 0 / 2 / 3
  /__w/min-ig/min-ig/lab-ig/fsh-generated/resources/Patient-Pasient-1 : 0 / 0 / 1
  /__w/min-ig/min-ig/lab-ig/fsh-generated/resources/StructureDefinition-minig-observation-blodprove : 0 / 1 / 4
@@ -13,6 +13,7 @@ Generated $--. FHIR version $-- for thoroak.fhir.no.ig#$-- (canonical = https://
 
 == n/a ==
 WARNING: Patient.extension.extension: The reference urn:iso:std:iso:3166 could not be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/p/img at Line 298, column 5: The image source '../images/blodtrykk-flyt.svg' cannot be resolved
 WARNING: /__w/min-ig/min-ig/lab-ig/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
 WARNING: /__w/min-ig/min-ig/lab-ig/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
 WARNING: /__w/min-ig/min-ig/lab-ig/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9

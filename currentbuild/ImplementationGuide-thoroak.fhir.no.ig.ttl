@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "MinIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Min Implementasjonsguide"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-08T23:14:52+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-09T14:35:31+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Thor Oscar Akre"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
