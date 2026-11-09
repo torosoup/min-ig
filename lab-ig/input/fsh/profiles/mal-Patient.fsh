@@ -10,7 +10,7 @@ Description: "En pasientprofil basert på NoBasisPatient fra HL7"
 * identifier MS
 * name.family MS
 
-Instance: KarinTestdal
+Instance: karin-testdal
 InstanceOf: MinIGPatient
 Description: "Fiktiv pasient Karin Testdal, 78 år"
 * id = "karin-testdal"
