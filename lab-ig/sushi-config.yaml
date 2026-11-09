@@ -26,5 +26,10 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Bruk av guiden:
+    Aktører: aktorer.html
+    Krav: krav.html
+    Prosess: prosess.html
+    Informasjonsbehov: informasjonsbehov.html
   Artifacts: artifacts.html
   TOC: toc.html
