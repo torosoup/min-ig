@@ -1,8 +1,19 @@
+Profile:     MinIGPatient
+Id:          minig-patient
+Parent:      NoBasisPatient
+Title:       "Pasient"
+Description: "En pasientprofil basert på NoBasisPatient fra HL7"
+* ^status = #draft
+* ^date = "2026-11-09"
+* ^publisher = "Thor Oscar Akre"
+
+* identifier MS
+* name.family MS
+
 Instance: KarinTestdal
-InstanceOf: Patient
+InstanceOf: MinIGPatient
 Description: "Fiktiv pasient Karin Testdal, 78 år"
 * id = "karin-testdal"
-* meta.profile = "http://hl7.no/fhir/StructureDefinition/no-basis-Patient"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Karin Testdal</p></div>"
 * name.family = "Testdal"

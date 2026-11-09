@@ -18,5 +18,5 @@ Description: "Minimal server capability statement for home blood pressure exchan
 * rest[0].resource[0].interaction[1].code = #search-type
 * rest[0].resource[0].interaction[2].code = #create
 * rest[0].resource[1].type = #Patient
-* rest[0].resource[1].profile = "http://hl7.no/fhir/StructureDefinition/no-basis-Patient"
+* rest[0].resource[1].profile = "https://thoroak.github.io/min-ig/StructureDefinition/minig-patient"
 * rest[0].resource[1].interaction[0].code = #read
